@@ -1,0 +1,31 @@
+/* 1. Element atau Tag HTML */
+p {
+  color: red;
+}
+
+/* 2. Class (.) */
+.text {
+  color: blue;
+}
+
+/* 3. ID (#) */
+#textId {
+  color: green;
+}
+
+/* 4. Grouping (,) */
+p,
+h1,
+h2 {
+  background-color: khaki;
+}
+
+/* 5. Descandant */
+div,
+div span {
+  color: red;
+}
+
+a {
+  color: inherit;
+}

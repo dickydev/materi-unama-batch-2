@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi 2 - Tag Table</title>
+  </head>
+  <body>
+    <h1>Materi 2 - Tag Table</h1>
+
+    <h2>1. Table Biasa</h2>
+    <table border="1">
+      <tr>
+        <th>Nama</th>
+        <th>Kelas</th>
+        <th>Umur</th>
+      </tr>
+      <tr>
+        <td>Ucup</td>
+        <td>Sistem Informasi</td>
+        <td>16 Tahun</td>
+      </tr>
+      <tr>
+        <td>Rafa Naura</td>
+        <td>Sistem Informasi</td>
+        <td>27 Tahun</td>
+      </tr>
+      <tr>
+        <td>Aditya</td>
+        <td>Sistem Informasi</td>
+        <td>40 Tahun</td>
+      </tr>
+    </table>
+
+    <h2>2. Table Semantik</h2>
+    <table border="1">
+      <caption>
+        Table 1.1 Table Data
+      </caption>
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>Umur</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ucup</td>
+          <td>Sistem Informasi</td>
+          <td>16 Tahun</td>
+        </tr>
+        <tr>
+          <td>Rafa Naura</td>
+          <td>Sistem Informasi</td>
+          <td>27 Tahun</td>
+        </tr>
+        <tr>
+          <td>Aditya</td>
+          <td>Sistem Informasi</td>
+          <td>40 Tahun</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table border="1">
+      <caption>
+        Table 1.2 Table Data User
+      </caption>
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>Umur</th>
+          <th colspan="2">Semester</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Ucup</td>
+          <td>Sistem Informasi</td>
+          <td>16 Tahun</td>
+          <td>Semester 1</td>
+          <td>Semester 2</td>
+        </tr>
+        <tr>
+          <td>Teknik Informatika</td>
+          <td>16 Tahun</td>
+          <td>Semester 4</td>
+          <td>Semester 5</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

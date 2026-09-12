@@ -1,0 +1,23 @@
+.kotak {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+
+  /* Padding */
+  /* padding: 20px; */
+  padding-top: 100px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+
+  /* Border */
+  /* border: width style color */
+  border: 10px solid black;
+
+  /* Margin */
+  /* margin: 100px; */
+  margin-top: 150px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  margin-left: 250px;
+}

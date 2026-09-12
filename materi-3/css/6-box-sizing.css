@@ -1,0 +1,16 @@
+.kotak {
+  width: 100px;
+  height: 100px;
+  padding: 100px;
+  border: 20px solid black;
+}
+
+.merah {
+  background-color: red;
+  box-sizing: content-box;
+}
+
+.hijau {
+  background-color: green;
+  box-sizing: border-box;
+}

@@ -1,0 +1,6 @@
+div {
+  width: 300px;
+  height: 208px;
+  background-color: red;
+  overflow: auto;
+}

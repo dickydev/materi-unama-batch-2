@@ -1,0 +1,25 @@
+/* 1. Inline */
+p {
+  display: inline;
+  background-color: yellow;
+  height: 1000px;
+}
+
+/* 2. Block */
+span {
+  display: block;
+  background-color: red;
+  height: 100px;
+}
+
+/* 3. Inline Block */
+a {
+  display: inline-block;
+  background-color: green;
+  height: 50px;
+}
+
+/* 4. None */
+ul {
+  display: none;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contoh penerapan HTML Media Elements - video, audio, dan iframe.">
+  <title>Class 2 — Media Elements Deep Dive</title>
+</head>
+<body>
+
+  <h1>🎧 Class 2 — Media Elements</h1>
+  <p>
+    HTML bukan hanya untuk teks dan gambar — tetapi juga mendukung media interaktif seperti <strong>video</strong>,
+    <strong>audio</strong>, dan <strong>konten eksternal</strong>.
+    Sejak HTML5, media menjadi bagian resmi dari spesifikasi web modern.
+  </p>
+
+  <hr>
+
+  <!-- 🎞️ VIDEO SECTION -->
+  <section>
+    <h2>🎞️ 1. Embedding Video dengan &lt;video&gt;</h2>
+    <p>
+      Elemen <code>&lt;video&gt;</code> digunakan untuk menampilkan video secara langsung di halaman web tanpa plugin eksternal seperti Flash.
+    </p>
+
+    <!-- Contoh video dengan multi-format, poster, dan caption -->
+    <video width="480" controls poster="thumbnail.jpg">
+      <source src="video.mp4" type="video/mp4">
+      <source src="video.webm" type="video/webm">
+      <track src="subtitle.vtt" kind="subtitles" srclang="id" label="Bahasa Indonesia">
+      Browser Anda tidak mendukung video HTML5.
+    </video>
+
+    <p>
+      <em>Penjelasan:</em><br>
+      - Atribut <code>controls</code> menampilkan kontrol video.<br>
+      - <code>poster</code> menampilkan gambar preview sebelum video dimulai.<br>
+      - <code>&lt;track&gt;</code> digunakan untuk subtitle agar video lebih aksesibel.<br>
+      - <code>source</code> mendukung multi-format untuk kompatibilitas lintas browser.
+    </p>
+
+    <p>
+      <em>Analogi:</em> Tag <code>&lt;video&gt;</code> seperti pemutar film mini di browser —
+      lengkap dengan tombol play, volume, dan fullscreen tanpa aplikasi tambahan.
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- 🔊 AUDIO SECTION -->
+  <section>
+    <h2>🔊 2. Embedding Audio dengan &lt;audio&gt;</h2>
+    <p>
+      Elemen <code>&lt;audio&gt;</code> memungkinkan pengguna memutar file suara secara langsung di browser.
+      Audio bisa digunakan untuk musik, narasi, podcast, atau efek suara.
+    </p>
+
+    <!-- Contoh audio -->
+    <audio controls preload="metadata">
+      <source src="music.mp3" type="audio/mpeg">
+      <source src="music.ogg" type="audio/ogg">
+      Browser Anda tidak mendukung audio HTML5.
+    </audio>
+
+    <p>
+      <em>Penjelasan:</em><br>
+      - <code>controls</code> untuk tombol play/pause.<br>
+      - <code>preload="metadata"</code> hanya memuat informasi dasar agar hemat bandwidth.<br>
+      - Bisa menambahkan <code>loop</code>, <code>autoplay</code>, atau <code>muted</code> sesuai kebutuhan.<br>
+      - Gunakan <strong>.mp3</strong> untuk dukungan paling luas.
+    </p>
+
+    <p>
+      <em>Analogi:</em> Elemen <code>&lt;audio&gt;</code> seperti pemutar musik digital —
+      pengguna bebas memutar atau menjeda sesuai keinginan mereka.
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- 🌍 IFRAME SECTION -->
+  <section>
+    <h2>🌍 3. Embedding External Content dengan &lt;iframe&gt;</h2>
+    <p>
+      Elemen <code>&lt;iframe&gt;</code> digunakan untuk menyematkan halaman web atau konten eksternal,
+      seperti video YouTube, peta Google Maps, atau dokumen dari luar.
+    </p>
+
+    <!-- Contoh embed YouTube -->
+    <h3>Contoh Embed Video YouTube</h3>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="Video YouTube player"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+
+    <!-- Contoh embed Google Maps -->
+    <h3>Contoh Embed Google Maps</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.7279244031773!2d106.81666687497006!3d-6.561598564162393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c4be70a1c2b7%3A0x34dc39c1a681d6cc!2sBogor%20City!5e0!3m2!1sen!2sid!4v1700000000000"
+      width="560" height="315" style="border:0;"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Peta Lokasi Bogor City">
+    </iframe>
+
+    <p>
+      <em>Penjelasan:</em><br>
+      - Atribut <code>src</code> menentukan sumber konten.<br>
+      - <code>title</code> wajib untuk aksesibilitas screen reader.<br>
+      - <code>allowfullscreen</code> mengizinkan mode layar penuh (khusus video).<br>
+      - <code>sandbox</code> dapat digunakan untuk membatasi interaksi jika sumbernya bukan milik kita.
+    </p>
+
+    <p>
+      <em>Analogi:</em> Elemen <code>&lt;iframe&gt;</code> seperti jendela kecil di rumahmu —
+      kamu bisa melihat dunia luar, tetapi tetap butuh pagar keamanan agar tidak dimasuki orang asing.
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- REFLEKSI & CHALLENGE -->
+  <section>
+    <h2>💭 Refleksi dan Challenge</h2>
+    <ol>
+      <li>Mengapa autoplay dianggap melanggar prinsip aksesibilitas modern?</li>
+      <li>Bagaimana cara membuat video tetap ringan namun tetap informatif?</li>
+      <li>Jelaskan fungsi atribut <code>poster</code> pada elemen <code>&lt;video&gt;</code>.</li>
+      <li>Bagaimana kamu akan mengatur audio di website pembelajaran agar tidak mengganggu pengguna?</li>
+    </ol>
+
+    <h3>🧪 Challenge: Multimedia Profile Page</h3>
+    <p>
+      Buat halaman bernama <code>multimedia-profile.html</code> yang berisi:
+    </p>
+    <ul>
+      <li>Video profil dengan gambar poster.</li>
+      <li>Audio perkenalan singkat diri sendiri.</li>
+      <li>Peta lokasi tempat tinggal menggunakan <code>&lt;iframe&gt;</code>.</li>
+    </ul>
+    <p>Pastikan semua elemen memiliki <strong>kontrol</strong> dan <strong>atribut aksesibilitas</strong>.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Dicky Fernando — Media Elements Deep Dive</p>
+  </footer>
+
+</body>
+</html>
+

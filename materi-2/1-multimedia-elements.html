@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi 1 - Multimedia Elements</title>
+  </head>
+  <body>
+    <h1>Materi 1 - Multimedia Elements</h1>
+
+    <h2>1. Tag Video</h2>
+    <video width="400" controls poster="../materi-1/images/Gambar.jpg">
+      <source
+        src="./assets/video/TULUS - Teh Hijau (Official Lyric Video).mp4"
+        type="video/mp4"
+      />
+      <track src="" />
+    </video>
+
+    <h2>2. Tag Audio</h2>
+    <audio controls>
+      <source
+        src="./assets/audio/TULUS - Teh Hijau (Official Lyric Video).mp3"
+      />
+    </audio>
+
+    <h2>3. iFrame</h2>
+    <iframe
+      data-testid="embed-iframe"
+      style="border-radius: 12px"
+      title="Music Hindia - Everything You Are"
+      src="https://open.spotify.com/embed/track/5WOSNVChcadlsCRiqXE45K?utm_source=generator&si=ba1ed952bfa44dec"
+      width="100%"
+      height="352"
+      frameborder="0"
+      allowfullscreen=""
+      allow="
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        fullscreen;
+        picture-in-picture;
+      "
+      loading="lazy"
+    ></iframe>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/WmVeN2Pk4DU?si=KLnWsnTNWRbncmuJ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
