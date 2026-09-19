@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: transform 0.3s ease-in-out;
+}
+
+.translate:hover {
+  transform: translate(100px);
+}
+
+.scale:hover {
+  transform: scale(1.2);
+}
+
+.rotate:hover {
+  transform: rotate(45deg);
+}
+
+.skew:hover {
+  transform: skew(45deg);
+}

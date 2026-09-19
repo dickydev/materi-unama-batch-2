@@ -1,0 +1,78 @@
+button {
+  background-color: blue;
+  width: 100px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 360px;
+}
+
+button:hover {
+  background-color: rgb(9, 9, 145);
+}
+
+input {
+  outline: none;
+  border: 2px solid black;
+  border-radius: 360px;
+}
+
+input:focus {
+  outline: 5px solid red;
+  border-radius: 360px;
+  padding-inline: 10px;
+  border: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li::before {
+  content: '👉🏻 ';
+}
+ul li::after {
+  content: ' ✅';
+}
+
+.example::before {
+  content: 'Before: ';
+  color: red;
+}
+
+.example::after {
+  content: ' After';
+  color: blue;
+}
+
+a:hover {
+  color: green;
+}
+
+input:focus {
+  border-color: blue;
+  outline: none;
+}
+
+ul li:nth-child(2) {
+  color: purple;
+}
+
+input:not([type='text']) {
+  border-color: red;
+}
+
+p::first-line {
+  font-weight: bold;
+  color: darkblue;
+}
+
+button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+p::first-letter {
+  font-size: 2em;
+  color: darkred;
+}

@@ -1,0 +1,73 @@
+.simple-animation {
+  width: 100%;
+  height: 100px;
+  background-color: lightblue;
+  animation: slideRight 2s infinite alternate;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(200px);
+  }
+}
+
+.complex-animation {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  animation: colorMove 3s infinite;
+}
+
+@keyframes colorMove {
+  0% {
+    transform: translateX(0);
+    background-color: lightgreen;
+  }
+
+  50% {
+    transform: translateX(100px);
+    background-color: yellow;
+  }
+
+  100% {
+    transform: translateX(0);
+    background-color: lightgreen;
+  }
+}
+
+.fill-animation {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+  animation: fadeOut 2s backwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: crimson;
+  position: relative;
+  animation: bounce 1s ease infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: 0;
+  }
+}

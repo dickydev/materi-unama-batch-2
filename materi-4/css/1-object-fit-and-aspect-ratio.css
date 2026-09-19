@@ -1,0 +1,22 @@
+.box {
+  width: 200px;
+  height: 400px;
+}
+
+div.container {
+  background-color: red;
+  border: 8px solid black;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.aspect-ratio {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 2/3;
+}
